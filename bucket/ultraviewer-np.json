@@ -1,0 +1,18 @@
+{
+    "version": "6.2",
+    "url": "https://ultraviewer.net/en/UltraViewer_setup_6.2_en.exe#/setup.exe",
+    "hash": "694e6e3e36015ef4215eb6ec910f0ef6585177294896ede7c9530b669e650605",
+    "homepage": "https://ultraviewer.net/en",
+    "license": "Freeware",
+    "checkver": {
+        "url": "https://ultraviewer.net/en/download.html",
+        "regex": "UltraViewer_setup_([\\d.\\d]+)"
+    },
+    "autoupdate": {
+        "url": "https://ultraviewer.net/en/UltraViewer_setup_$version_en.exe#/setup.exe"
+    },
+    "installer": {
+        "file": "setup.exe",
+        "args": "/SILENT"
+    }
+}
