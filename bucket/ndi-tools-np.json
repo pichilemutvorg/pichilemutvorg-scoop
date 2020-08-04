@@ -1,0 +1,17 @@
+{
+    "version": "4.5",
+    "url": "http://new.tk/NDITools#/setup.exe",
+    "hash": "837737b5013a3cca5651210b08061842035a3979976d503e302eeda1f8c232ae",
+    "homepage": "https://www.ndi.tv/tools/",
+    "license": "Freeware",
+    "installer": {
+        "file": "setup.exe"
+    },
+    "checkver": {
+        "url": "https://www.ndi.tv/tools/",
+        "regex": "NDI TOOLS ([\\d.\\d]+)"
+    },
+    "autoupdate": {
+        "url": "http://new.tk/NDITools#/setup.exe"
+    }
+}
