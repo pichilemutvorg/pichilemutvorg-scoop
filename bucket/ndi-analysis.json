@@ -1,0 +1,57 @@
+{
+    "version": "4.5",
+    "url": "http://new.tk/NDIAnalysis#/setup.exe",
+    "hash": "d6e09ed5449795454f19ab39cfbae641b23aadece05888f576967d1f14b6bfa4",
+    "homepage": "https://www.ndi.tv/tools/",
+    "license": "Freeware",
+    "innosetup": true,
+    "checkver": {
+        "url": "https://www.ndi.tv/tools/",
+        "regex": "NDI TOOLS ([\\d.\\d]+)"
+    },
+    "autoupdate": {
+        "url": "http://new.tk/NDIAnalysis#/setup.exe"
+    },
+    "architecture": {
+        "32bit": {
+            "bin": [
+                [
+                    "x86/NDIAnalysis.exe",
+                    "NDIAnalysis"
+                ],
+                [
+                    "x86/NDIAnalysis.exe",
+                    "ndi-find",
+                    "/find"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "C:\\Windows\\system32\\cmd.exe",
+                    "NDI Analysis Tools",
+                    "/K $dir\\x86\\NDIAnalysis.exe"
+                ]
+            ]
+        },
+        "64bit": {
+            "bin": [
+                [
+                    "x64/NDIAnalysis.exe",
+                    "NDIAnalysis"
+                ],
+                [
+                    "x64/NDIAnalysis.exe",
+                    "ndi-find",
+                    "/find"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "C:\\Windows\\system32\\cmd.exe",
+                    "NDI Analysis Tools",
+                    "/K $dir\\x64\\NDIAnalysis.exe"
+                ]
+            ]
+        }
+    }
+}
